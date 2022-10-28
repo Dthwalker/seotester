@@ -1,9 +1,9 @@
 /* ————— SEO Test by DTHWalker —————*/
 
 class DTHWalkerTests {
-  
+
   constructor() {
-    this.t = 0
+    this.t = 0;
   }
 
   checkTitle() {
@@ -36,20 +36,20 @@ class DTHWalkerTests {
     const regexp = RegExp(word,'gi');
     let y = document.body.innerText.match(regexp);
     if (y) {
-      console.log(word + ' : ' + y.length)
+      console.log(word + ' : ' + y.length);
     } else {
-      console.log(`Key '${word}' not found`)
+      console.log(`Key '${word}' not found`);
     }
     if (typeof x == 'object') {
       if (this.t < x.length - 1) {
         this.t++
-        this.checkKeys(x)
+        this.checkKeys(x);
       } else {
-        this.t = 0
+        this.t = 0;
       }
     }
   }
 
 }
 
-const dthwTest = new DTHWalkerTests()
+const dthwTest = new DTHWalkerTests();
