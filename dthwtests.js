@@ -39,7 +39,7 @@ class DTHWalkerTests {
     if (typeof x == 'object') {
       if (this.t < x.length - 1) {
         this.t++
-        this.checkKey(x)
+        this.checkKeys(x)
       } else {
         this.t = 0
       }
