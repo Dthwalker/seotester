@@ -1,6 +1,10 @@
 /* ————— SEO Test by DTHWalker —————*/
 
 class DTHWalkerTests {
+  
+  constructor() {
+    this.t = 0
+  }
 
   checkTitle() {
     let x = document.querySelector('title');
